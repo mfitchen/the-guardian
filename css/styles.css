@@ -456,38 +456,45 @@ body h2 {
 
 ul {
   padding: 0;
-  border-bottom: 1px dotted #d6d6d6;
   margin: 0; }
+  ul.weather {
+    border-bottom: 1px dotted #d6d6d6; }
   ul li {
     display: inline;
     list-style-type: none; }
-    ul li img {
+    ul li img.weather {
       border-right: 1px dotted #d6d6d6;
       margin-left: 1%; }
 
 .card-large {
   font-size: 0.9em;
   border-top: 1px solid #99bbd0; }
-  .card-large .large-large {
-    font-size: 1.3em; }
-  .card-large .large-small {
-    font-size: 0.8em; }
+
+.large-large {
+  font-size: 1.3em; }
+
+.large-small {
+  font-size: 0.8em; }
 
 .card-medium {
   font-size: 0.8em;
   border-top: 1px solid #99bbd0; }
-  .card-medium .medium-large {
-    font-size: 1.2em; }
-  .card-medium .medium-small {
-    font-size: 0.7em; }
+
+.medium-large {
+  font-size: 1.2em; }
+
+.medium-small {
+  font-size: 0.7em; }
 
 .card-small {
   font-size: 0.7em;
   border-top: 1px solid #99bbd0; }
-  .card-small .small-large {
-    font-size: 1.1em; }
-  .card-small .small-small {
-    font-size: 0.6em; }
+
+.small-large {
+  font-size: 1.1em; }
+
+.small-small {
+  font-size: 0.6em; }
 
 h1 {
   margin: 0;
