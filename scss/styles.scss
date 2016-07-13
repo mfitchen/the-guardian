@@ -3,3 +3,35 @@
 @import "libraries/neat/neat";
 @import "libraries/helpers/variables";
 @import "libraries/helpers/mixins";
+
+body {
+  font-family: "Georgia",serif;
+  p {
+    font-size: 1em;
+  }
+}
+
+#{$all-buttons} {
+  background-color: white ;
+  color: $color-primary;
+  border: 2px solid tint($color-primary,60%);
+  border-radius: 25px;
+  padding: 5px;
+  display: block;
+  margin-top: 3%;
+}
+#{$all-buttons-focus},
+#{$all-buttons-hover} {
+  background-color: white;
+  color: black;
+  border: 2px solid $color-secondary;
+}
+#{$all-buttons-active} {
+  background-color: #00f;
+}
+.buttons {
+  margin-top: 70%;
+}
+.sidebar {
+  padding-left: 1%;
+}

@@ -1,1 +1,25 @@
+$font-size: .9em;
+$color-primary: #005689;
+$color-secondary: #d6d6d6;
+$color-third: #d24833;
+$color-fourth: #951c55;
+$color-fifth: white;
+$color-sixth: #f6f6f6;
+$spacing: 2.35765%;
 
+
+
+$fonts: (
+  large: $font-size,
+  medium: $font-size - .1em,
+  small: $font-size - .2em
+);
+
+$colors: (
+  primary: $color-primary,
+  secondary: $color-secondary,
+  third: $color-third,
+  fourth: $color-fourth,
+  fifth: $color-fifth,
+  sixth: $color-sixth
+  );

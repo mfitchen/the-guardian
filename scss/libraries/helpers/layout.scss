@@ -1,0 +1,58 @@
+.container {
+  @include outer-container(100%);
+  padding-top: $spacing;
+  margin-left: 15%;
+}
+body h2 {
+  font-size: 1.5em;
+}
+
+.top-row-content, .bottom-row-content {
+  height: 250px;
+  @include span-columns(12);
+}
+.bottom-row-content {
+  margin-top: $spacing
+}
+.sidebar {
+  width: 250px;
+  height: 550px;
+  float: left;
+  margin-right: $spacing;
+
+}
+.card-container {
+  width: 950px;
+  float: left;
+}
+.right-column {
+  height: 250px;
+  @include span-columns(12 of 12);
+}
+.card-large {
+  height: 250px;
+  @include span-columns(9 of 12);
+  overflow: hidden;
+    img {
+      float: right;
+      height: 100%;
+      width: auto;
+  }
+}
+.card-medium {
+    height: 250px;
+  @include span-columns(3 of 12);
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: auto;
+    }
+}
+.card-small {
+  height: 33%;
+  @include span-columns(3 of 12);
+  float: none;
+  width: 100%;
+  overflow: hidden;
+
+}

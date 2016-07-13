@@ -1,40 +1,119 @@
 .container {
-  @include outer-container();
+  @include outer-container(100%);
+  padding-top: $spacing;
+  margin-left: 15%;
+}
+body h2 {
+  font-size: 1.5em;
 }
 
 .top-row-content, .bottom-row-content {
   height: 250px;
-  border: 2px solid red;
   @include span-columns(12);
+}
+.bottom-row-content {
+  margin-top: $spacing
+}
+.sidebar {
+  width: 250px;
+  height: 550px;
+  float: left;
+  margin-right: $spacing;
 
 }
-
-.left-column {
-  height: 250px;
-  @include span-columns(3 of 12);
-  border: 2px solid blue;
+.card-container {
+  width: 950px;
+  float: left;
 }
-
 .right-column {
   height: 250px;
-  border: 2px solid green;
-  @include span-columns(9 of 12);
+  @include span-columns(12 of 12);
 }
 .card-large {
   height: 250px;
-  border: 2px solid purple;
   @include span-columns(9 of 12);
+  overflow: hidden;
+    img {
+      float: right;
+      height: 100%;
+      width: auto;
+  }
 }
 .card-medium {
     height: 250px;
-    border: 2px solid orange;
   @include span-columns(3 of 12);
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: auto;
+    }
 }
 .card-small {
   height: 33%;
-  border: 2px solid cyan;
   @include span-columns(3 of 12);
   float: none;
   width: 100%;
+  overflow: hidden;
 
 }
+
+@mixin list-items($list) {
+ ul {
+   padding: 0;
+   border-bottom: 1px dotted $color-secondary;
+   margin: 0;
+   li {
+     display: $list;
+     list-style-type: none;
+       img {
+         border-right: 1px dotted $color-secondary;
+         margin-left: 1%;
+       }
+     }
+   }
+}
+@include list-items(inline);
+
+ @each $font-name, $font-value in $fonts {
+   .card-#{$font-name} {
+     font-size: $font-value;
+     border-top: 1px solid tint($color-primary,60%);
+
+  //    @if .card-#{$font-name} == .card-small {
+  //      .card-small:nth-of-type(1) {
+  //      border-top: none;
+  //    } @else {
+  //      border-top: 1px solid tint($color-primary,60%);
+  //    }
+  //  }
+   .#{$font-name}-large {
+     font-size: $font-value + .4em;
+   }
+   .#{$font-name}-small {
+     font-size: $font-value - .1em;
+   }
+      }
+ }
+ @for $i from 1 through 6 {
+   h#{$i} {
+     margin: 0;
+     padding: 0 8px 0 8px;
+     @if h#{$i} == h2 {
+       border-top: 2px solid $color-primary;
+     } @else {
+       border-top: none;
+     }
+   }
+ }
+
+ @each $color-name, $color-value in $colors {
+   .background-#{$color-name} {
+     background-color: $color-value;
+   }
+   .color-#{$color-name} {
+     color: $color-value;
+   }
+   .lighten-color-#{$color-name} {
+     color: tint($color-value, 60%);
+   }
+ }
