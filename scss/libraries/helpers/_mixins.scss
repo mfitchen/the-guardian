@@ -1,0 +1,40 @@
+.container {
+  @include outer-container();
+}
+
+.top-row-content, .bottom-row-content {
+  height: 250px;
+  border: 2px solid red;
+  @include span-columns(12);
+
+}
+
+.left-column {
+  height: 250px;
+  @include span-columns(3 of 12);
+  border: 2px solid blue;
+}
+
+.right-column {
+  height: 250px;
+  border: 2px solid green;
+  @include span-columns(9 of 12);
+}
+.card-large {
+  height: 250px;
+  border: 2px solid purple;
+  @include span-columns(9 of 12);
+}
+.card-medium {
+    height: 250px;
+    border: 2px solid orange;
+  @include span-columns(3 of 12);
+}
+.card-small {
+  height: 33%;
+  border: 2px solid cyan;
+  @include span-columns(3 of 12);
+  float: none;
+  width: 100%;
+
+}
