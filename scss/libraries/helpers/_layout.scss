@@ -3,9 +3,6 @@
   margin: 0 auto;
   height: 100%;
   position: relative;
-  &.background-fifth {
-    margin-top: $spacing;
-  }
 }
 body h2 {
   font-size: 1.5em;
@@ -23,7 +20,24 @@ body h2 {
   height: 550px;
   float: left;
   margin-right: $spacing;
+  padding-left: 1%;
+  & h4 {
+     border-top: 1px solid tint($color-primary,60%);
+  }
+}
 
+
+.heading {
+  @include clearfix;
+  height: 165px;
+  margin-bottom: $spacing;
+}
+.nav-bar {
+  height: 37px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;;
 }
 .card-container {
   width: 950px;
@@ -34,9 +48,13 @@ body h2 {
   height: 250px;
   @include span-columns(12 of 12);
 }
+ .second-card {
+  height: 900px;
+}
 
 .card-large {
   height: 250px;
+  position: relative;
   @include span-columns(9 of 12);
   overflow: hidden;
     img {
@@ -47,12 +65,14 @@ body h2 {
 }
 .card-medium {
     height: 250px;
+    position: relative;
   @include span-columns(3 of 12);
     overflow: hidden;
     img {
       width: 100%;
       height: auto;
     }
+
 }
 .card-small {
   height: 31%;
@@ -61,7 +81,29 @@ body h2 {
   float: none;
   width: 100%;
   overflow: hidden;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &:nth-of-type(1) {
+  border-top: none;
 }
-.card-small:last-child {
-  margin-bottom: 0;
+}
+.sub-text {
+  position: absolute;
+  width: 100%;
+  top: 260px;
+
+}
+.british-text {
+  width: 33%;
+  float: left;
+}
+
+@for $i from 2 through 3 {
+  .card-#{$i} {
+    height: 300px;
+  }
+   #card-#{$i} {
+    height: 250px;
+  }
 }

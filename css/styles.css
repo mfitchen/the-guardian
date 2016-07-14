@@ -468,27 +468,27 @@ ul {
 
 h1 {
   margin: 0;
-  padding: 0 8px 0 8px; }
+  padding: 3px 8px 0 8px; }
 
 h2 {
   margin: 0;
-  padding: 0 8px 0 8px; }
+  padding: 3px 8px 0 8px; }
 
 h3 {
   margin: 0;
-  padding: 0 8px 0 8px; }
+  padding: 3px 8px 0 8px; }
 
 h4 {
   margin: 0;
-  padding: 0 8px 0 8px; }
+  padding: 3px 8px 0 8px; }
 
 h5 {
   margin: 0;
-  padding: 0 8px 0 8px; }
+  padding: 3px 8px 0 8px; }
 
 h6 {
   margin: 0;
-  padding: 0 8px 0 8px; }
+  padding: 3px 8px 0 8px; }
 
 .background-primary {
   background-color: #005689; }
@@ -574,6 +574,42 @@ h6 {
 .darken-color-seventh {
   background-color: #262626; }
 
+.background-eighth {
+  background-color: #484f53; }
+
+.color-eighth {
+  color: #484f53; }
+
+.lighten-color-eighth {
+  color: #b6b9ba; }
+
+.darken-color-eighth {
+  background-color: #3c4245; }
+
+.background-nineth {
+  background-color: #f3950f; }
+
+.color-nineth {
+  color: #f3950f; }
+
+.lighten-color-nineth {
+  color: #fad59f; }
+
+.darken-color-nineth {
+  background-color: #dd870b; }
+
+.background-tenth {
+  background-color: #ffbb00; }
+
+.color-tenth {
+  color: #ffbb00; }
+
+.lighten-color-tenth {
+  color: #ffe499; }
+
+.darken-color-tenth {
+  background-color: #e6a800; }
+
 .right {
   float: right; }
 
@@ -591,8 +627,6 @@ h6 {
     clear: both;
     content: "";
     display: block; }
-  .container.background-fifth {
-    margin-top: 2.35765%; }
 
 body h2 {
   font-size: 1.5em; }
@@ -613,7 +647,25 @@ body h2 {
   width: 250px;
   height: 550px;
   float: left;
-  margin-right: 2.35765%; }
+  margin-right: 2.35765%;
+  padding-left: 1%; }
+  .sidebar h4 {
+    border-top: 1px solid #99bbd0; }
+
+.heading {
+  height: 165px;
+  margin-bottom: 2.35765%; }
+  .heading::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.nav-bar {
+  height: 37px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0; }
 
 .card-container {
   width: 950px;
@@ -628,8 +680,12 @@ body h2 {
   .right-column:last-child {
     margin-right: 0; }
 
+.second-card {
+  height: 900px; }
+
 .card-large {
   height: 250px;
+  position: relative;
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -644,6 +700,7 @@ body h2 {
 
 .card-medium {
   height: 250px;
+  position: relative;
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -667,31 +724,37 @@ body h2 {
   overflow: hidden; }
   .card-small:last-child {
     margin-right: 0; }
+  .card-small:last-child {
+    margin-bottom: 0; }
+  .card-small:nth-of-type(1) {
+    border-top: none; }
 
-.card-small:last-child {
-  margin-bottom: 0; }
-
-body {
-  font-family: "Georgia",serif; }
-  body p {
-    font-size: 1em; }
-
-.sidebar h4 {
-  border-top: 1px solid #99bbd0; }
-
-.heading {
-  height: 165px; }
-  .heading::after {
-    clear: both;
-    content: "";
-    display: block; }
-
-.nav-bar {
-  height: 37px;
+.sub-text {
   position: absolute;
   width: 100%;
-  bottom: 0;
-  left: 0; }
+  top: 260px; }
+
+.british-text {
+  width: 33%;
+  float: left; }
+
+.card-2 {
+  height: 300px; }
+
+#card-2 {
+  height: 250px; }
+
+.card-3 {
+  height: 300px; }
+
+#card-3 {
+  height: 250px; }
+
+body {
+  font-family: "Georgia",serif;
+  background-color: #d6d6d6; }
+  body p {
+    font-size: 1em; }
 
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   background-color: white;
@@ -713,8 +776,5 @@ button:active, input[type="button"]:active, input[type="reset"]:active, input[ty
 
 .buttons {
   margin-top: 70%; }
-
-.sidebar {
-  padding-left: 1%; }
 
 /*# sourceMappingURL=styles.css.map */

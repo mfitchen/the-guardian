@@ -8,23 +8,10 @@
 
 body {
   font-family: "Georgia",serif;
+  background-color: $color-secondary;
   p {
     font-size: 1em;
   }
-}
-.sidebar h4 {
-   border-top: 1px solid tint($color-primary,60%);
-}
-.heading {
-  @include clearfix;
-  height: 165px;
-}
-.nav-bar {
-  height: 37px;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 0;;
 }
 #{$all-buttons} {
   background-color: white ;
@@ -46,7 +33,4 @@ body {
 }
 .buttons {
   margin-top: 70%;
-}
-.sidebar {
-  padding-left: 1%;
 }
