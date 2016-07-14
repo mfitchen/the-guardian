@@ -19,7 +19,13 @@ body {
   @include clearfix;
   height: 165px;
 }
-
+.nav-bar {
+  height: 37px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;;
+}
 #{$all-buttons} {
   background-color: white ;
   color: $color-primary;

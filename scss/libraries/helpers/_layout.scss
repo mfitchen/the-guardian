@@ -53,10 +53,13 @@ body h2 {
     }
 }
 .card-small {
-  height: 33%;
+  height: 31%;
   @include span-columns(3 of 12);
+  margin-bottom: $spacing + 2 ;
   float: none;
   width: 100%;
   overflow: hidden;
-
+}
+.card-small:last-child {
+  margin-bottom: 0;
 }
