@@ -3,12 +3,21 @@
 @import "libraries/neat/neat";
 @import "libraries/helpers/variables";
 @import "libraries/helpers/mixins";
+@import "libraries/helpers/layout";
+
 
 body {
   font-family: "Georgia",serif;
   p {
     font-size: 1em;
   }
+}
+.sidebar h4 {
+   border-top: 1px solid tint($color-primary,60%);
+}
+.heading {
+  @include clearfix;
+  height: 165px;
 }
 
 #{$all-buttons} {

@@ -1,7 +1,11 @@
 .container {
-  @include outer-container(100%);
-  padding-top: $spacing;
-  margin-left: 15%;
+  @include outer-container(80%);
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+  &.background-fifth {
+    margin-top: $spacing;
+  }
 }
 body h2 {
   font-size: 1.5em;

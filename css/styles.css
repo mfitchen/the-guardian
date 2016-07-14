@@ -370,16 +370,205 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+ul {
+  padding: 0;
+  margin: 0; }
+  ul.weather {
+    border-bottom: 1px dotted #d6d6d6; }
+  ul.right li:first-of-type {
+    padding-left: 50%;
+    padding-right: 2.35765%; }
+  ul.nav {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    font-size: 1.2em;
+    display: inline; }
+    ul.nav li {
+      padding: .4%; }
+  ul li {
+    display: inline;
+    list-style-type: none;
+    padding-top: 2%; }
+    ul li img.weather {
+      border-right: 1px dotted #d6d6d6;
+      margin-left: 1%; }
+    ul li img.right {
+      padding-right: 5%; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+  ul.weather {
+    border-bottom: 1px dotted #d6d6d6; }
+  ul.right li:first-of-type {
+    padding-left: 50%;
+    padding-right: 2.35765%; }
+  ul.nav {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    font-size: 1.2em;
+    display: inline-block; }
+    ul.nav li {
+      padding: .4%; }
+  ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding-top: 2%; }
+    ul li img.weather {
+      border-right: 1px dotted #d6d6d6;
+      margin-left: 1%; }
+    ul li img.right {
+      padding-right: 5%; }
+
+.card-large {
+  font-size: 0.9em;
+  border-top: 1px solid #99bbd0; }
+
+.large-large {
+  font-size: 1.3em; }
+
+.large-small {
+  font-size: 0.8em; }
+
+.card-medium {
+  font-size: 0.8em;
+  border-top: 1px solid #99bbd0; }
+
+.medium-large {
+  font-size: 1.2em; }
+
+.medium-small {
+  font-size: 0.7em; }
+
+.card-small {
+  font-size: 0.7em;
+  border-top: 1px solid #99bbd0; }
+
+.small-large {
+  font-size: 1.1em; }
+
+.small-small {
+  font-size: 0.6em; }
+
+h1 {
+  margin: 0;
+  padding: 0 8px 0 8px; }
+
+h2 {
+  margin: 0;
+  padding: 0 8px 0 8px; }
+
+h3 {
+  margin: 0;
+  padding: 0 8px 0 8px; }
+
+h4 {
+  margin: 0;
+  padding: 0 8px 0 8px; }
+
+h5 {
+  margin: 0;
+  padding: 0 8px 0 8px; }
+
+h6 {
+  margin: 0;
+  padding: 0 8px 0 8px; }
+
+.background-primary {
+  background-color: #005689; }
+
+.color-primary {
+  color: #005689; }
+
+.lighten-color-primary {
+  color: #99bbd0; }
+
+.darken-color-primary {
+  background-color: #004670; }
+
+.background-secondary {
+  background-color: #d6d6d6; }
+
+.color-secondary {
+  color: #d6d6d6; }
+
+.lighten-color-secondary {
+  color: #efefef; }
+
+.darken-color-secondary {
+  background-color: #c9c9c9; }
+
+.background-third {
+  background-color: #d24833; }
+
+.color-third {
+  color: #d24833; }
+
+.lighten-color-third {
+  color: #edb6ad; }
+
+.darken-color-third {
+  background-color: #c13e2b; }
+
+.background-fourth {
+  background-color: #951c55; }
+
+.color-fourth {
+  color: #951c55; }
+
+.lighten-color-fourth {
+  color: #d5a4bb; }
+
+.darken-color-fourth {
+  background-color: #801849; }
+
+.background-fifth {
+  background-color: white; }
+
+.color-fifth {
+  color: white; }
+
+.lighten-color-fifth {
+  color: white; }
+
+.darken-color-fifth {
+  background-color: #f2f2f2; }
+
+.background-sixth {
+  background-color: #f6f6f6; }
+
+.color-sixth {
+  color: #f6f6f6; }
+
+.lighten-color-sixth {
+  color: #fbfbfb; }
+
+.darken-color-sixth {
+  background-color: #e9e9e9; }
+
+.right {
+  float: right; }
+
+.left {
+  float: left; }
+
 .container {
-  max-width: 100%;
+  max-width: 80%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 2.35765%;
-  margin-left: 15%; }
+  margin: 0 auto;
+  height: 100%;
+  position: relative; }
   .container::after {
     clear: both;
     content: "";
     display: block; }
+  .container.background-fifth {
+    margin-top: 2.35765%; }
 
 body h2 {
   font-size: 1.5em; }
@@ -454,136 +643,20 @@ body h2 {
   .card-small:last-child {
     margin-right: 0; }
 
-ul {
-  padding: 0;
-  margin: 0; }
-  ul.weather {
-    border-bottom: 1px dotted #d6d6d6; }
-  ul li {
-    display: inline;
-    list-style-type: none; }
-    ul li img.weather {
-      border-right: 1px dotted #d6d6d6;
-      margin-left: 1%; }
-
-.card-large {
-  font-size: 0.9em;
-  border-top: 1px solid #99bbd0; }
-
-.large-large {
-  font-size: 1.3em; }
-
-.large-small {
-  font-size: 0.8em; }
-
-.card-medium {
-  font-size: 0.8em;
-  border-top: 1px solid #99bbd0; }
-
-.medium-large {
-  font-size: 1.2em; }
-
-.medium-small {
-  font-size: 0.7em; }
-
-.card-small {
-  font-size: 0.7em;
-  border-top: 1px solid #99bbd0; }
-
-.small-large {
-  font-size: 1.1em; }
-
-.small-small {
-  font-size: 0.6em; }
-
-h1 {
-  margin: 0;
-  padding: 0 8px 0 8px;
-  border-top: 2px solid #005689; }
-
-h2 {
-  margin: 0;
-  padding: 0 8px 0 8px;
-  border-top: 2px solid #005689; }
-
-h3 {
-  margin: 0;
-  padding: 0 8px 0 8px;
-  border-top: 2px solid #005689; }
-
-h4 {
-  margin: 0;
-  padding: 0 8px 0 8px;
-  border-top: 2px solid #005689; }
-
-h5 {
-  margin: 0;
-  padding: 0 8px 0 8px;
-  border-top: 2px solid #005689; }
-
-h6 {
-  margin: 0;
-  padding: 0 8px 0 8px;
-  border-top: 2px solid #005689; }
-
-.background-primary {
-  background-color: #005689; }
-
-.color-primary {
-  color: #005689; }
-
-.lighten-color-primary {
-  color: #99bbd0; }
-
-.background-secondary {
-  background-color: #d6d6d6; }
-
-.color-secondary {
-  color: #d6d6d6; }
-
-.lighten-color-secondary {
-  color: #efefef; }
-
-.background-third {
-  background-color: #d24833; }
-
-.color-third {
-  color: #d24833; }
-
-.lighten-color-third {
-  color: #edb6ad; }
-
-.background-fourth {
-  background-color: #951c55; }
-
-.color-fourth {
-  color: #951c55; }
-
-.lighten-color-fourth {
-  color: #d5a4bb; }
-
-.background-fifth {
-  background-color: white; }
-
-.color-fifth {
-  color: white; }
-
-.lighten-color-fifth {
-  color: white; }
-
-.background-sixth {
-  background-color: #f6f6f6; }
-
-.color-sixth {
-  color: #f6f6f6; }
-
-.lighten-color-sixth {
-  color: #fbfbfb; }
-
 body {
   font-family: "Georgia",serif; }
   body p {
     font-size: 1em; }
+
+.sidebar h4 {
+  border-top: 1px solid #99bbd0; }
+
+.heading {
+  height: 165px; }
+  .heading::after {
+    clear: both;
+    content: "";
+    display: block; }
 
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   background-color: white;
