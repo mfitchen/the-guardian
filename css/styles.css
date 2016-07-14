@@ -750,6 +750,56 @@ body h2 {
 #card-3 {
   height: 250px; }
 
+@media screen and (max-width: 920px) {
+  .card-container {
+    width: 100%;
+    margin: 0; }
+
+  .top-row-content, .bottom-row-content {
+    margin: 0;
+    width: 100%;
+    height: 50%; }
+
+  .right-column {
+    margin: 0;
+    width: 100%;
+    height: 90%; }
+
+  .sidebar {
+    display: none; }
+
+  .sub-text {
+    display: none; }
+
+  .card-small, .card-medium, .card-large {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-bottom: 2.35765%;
+    margin-top: 0; }
+    .card-small:last-child, .card-medium:last-child, .card-large:last-child {
+      margin-right: 0; }
+
+  .card-large {
+    height: 100%;
+    width: 100%; }
+    .card-large img {
+      float: none;
+      height: auto;
+      width: 100%; }
+    .card-large #card-2 {
+      height: auto; }
+
+  .card-medium {
+    height: 7em; }
+    .card-medium img {
+      float: left;
+      width: auto;
+      height: 100%; }
+
+  .card-small {
+    height: 5em; } }
 body {
   font-family: "Georgia",serif;
   background-color: #d6d6d6; }

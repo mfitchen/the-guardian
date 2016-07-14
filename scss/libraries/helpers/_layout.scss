@@ -107,3 +107,59 @@ body h2 {
     height: 250px;
   }
 }
+
+@media screen and (max-width: 920px) {
+  .card-container {
+      width: 100%;
+      margin: 0;
+  }
+  .top-row-content, .bottom-row-content {
+    margin: 0;
+    width: 100%;
+    height: 50%;
+  }
+  .right-column {
+    margin: 0;
+    width: 100%;
+    height: 90%;
+  }
+  .sidebar {
+    display: none;
+  }
+
+  .sub-text {
+    display: none;
+  }
+
+  .card-small, .card-medium, .card-large {
+    @include span-columns(12 of 12);
+    margin-bottom: $spacing;
+    margin-top: 0;
+  }
+      .card-large {
+        height: 100%;
+        width: 100%;
+          img {
+            float: none;
+            height: auto;
+            width: 100%;
+        }
+          #card-2 {
+            height: auto;
+          }
+      }
+
+  .card-medium {
+    height: 7em;
+    img {
+      float: left;
+      width: auto;
+      height: 100%;
+    }
+  }
+  .card-small {
+
+    height: 5em;
+
+  }
+}
